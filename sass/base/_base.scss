@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /*
+  I want 10px to be the root size, 16px is the default size set by browsers
+  so to change it to % the calculation is
+  10px:16px = 62.5
+  with this % value I allow the user to change the font-size setting in the browser
+  and all the page still looks good. 
+  */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
