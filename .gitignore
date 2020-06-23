@@ -12,6 +12,6 @@ node_modules
 # ignoring package-lock.json to focus on the relevant files
 package-lock.json
 
-# don't forget to ignore your compiled app directory
+# compiled app directory
 # lib
 # dist
