@@ -1,0 +1,53 @@
+.row {
+  max-width: $grid-width;
+  background: #eee;
+  margin: 0 auto;
+
+  // :not pseudo class selects every row except the last row:child 
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  @include clearfix;
+
+  // attribute selector is surrounded by []
+  // ^ this symbol in front of the "=" selects all classes which start with the defined name 
+  // * this symbol in front of the "=" selects all classes which contain the defined name 
+  // $ this symbol in front of the "=" selects all classes which end with the defined name 
+  [class^="col-"] {
+    background: orangered;
+    color: #eee;
+    float: left;
+    font-size: 1.5rem;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+
+  .col-1-of-3 {
+    width: calc((100% - #{$gutter-horizontal} * 2) / 3);
+  }
+
+  .col-2-of-3 {
+    width: calc(2 * ((100% - #{$gutter-horizontal} * 2) / 3) + #{$gutter-horizontal});
+  }
+
+  .col-1-of-4 {
+    width: calc((100% - #{$gutter-horizontal} * 3) / 4);
+  }
+
+  .col-2-of-4 {
+    width: calc(2 * ((100% - #{$gutter-horizontal} * 3) / 4) + #{$gutter-horizontal});
+  }
+
+  .col-3-of-4 {
+    width: calc(3 * ((100% - #{$gutter-horizontal} * 3) / 4) + (#{$gutter-horizontal} * 2));
+  }
+
+}
