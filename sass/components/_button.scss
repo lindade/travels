@@ -4,7 +4,7 @@
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     padding: 1.5rem 4rem;
     display: inline-block;
     border-radius: 5rem;
@@ -52,5 +52,31 @@
   &--animated {
     animation: moveInBottom 1s ease-out .75s;
     animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+
+  &:link,
+  &:visited {
+    color: $color-primary;
+    font-size: $default-font-size;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    display: inline-block;
+    padding: .3rem .8rem;
+    transition: all .2s;
+  }
+
+  &:hover {
+    background: $color-primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, .15);
+    transform: translateY(-.2rem);
+  }
+
+  &:active {
+    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    transform: translateY(-.1rem);
   }
 }

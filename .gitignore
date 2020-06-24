@@ -12,6 +12,9 @@ node_modules
 # ignoring package-lock.json to focus on the relevant files
 package-lock.json
 
+# vscode setting json
+.vscode
+
 # compiled app directory
 # lib
 # dist

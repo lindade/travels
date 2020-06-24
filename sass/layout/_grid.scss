@@ -1,6 +1,5 @@
 .row {
   max-width: $grid-width;
-  background: #eee;
   margin: 0 auto;
 
   // :not pseudo class selects every row except the last row:child 
@@ -15,15 +14,12 @@
   // * this symbol in front of the "=" selects all classes which contain the defined name 
   // $ this symbol in front of the "=" selects all classes which end with the defined name 
   [class^="col-"] {
-    background: orangered;
-    color: #eee;
     float: left;
     font-size: 1.5rem;
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
     }
-
   }
 
   .col-1-of-2 {
