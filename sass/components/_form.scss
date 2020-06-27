@@ -15,6 +15,7 @@
     background-color: rgba($color-white, .9);
     width: 90%;
     display: block;
+    transition: all .3s;
 
     &:focus {
       outline: none;
@@ -38,5 +39,14 @@
     margin-left: 2rem;
     margin-top: .8rem;
     display: block;
+    transition: all .3s;
+  }
+
+  // + is the sibling selector, + selects the first sibling following the defined selector
+  // ~ is the sibling selector, has to be used when there are other siblings in between the ones that should be selected
+  &__input:placeholder-shown+&__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
   }
 }

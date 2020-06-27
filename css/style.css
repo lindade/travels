@@ -330,7 +330,8 @@ body {
   border-bottom: 3px solid transparent;
   background-color: rgba(255, 255, 255, 0.9);
   width: 90%;
-  display: block; }
+  display: block;
+  transition: all .3s; }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
@@ -345,7 +346,13 @@ body {
   font-weight: 700;
   margin-left: 2rem;
   margin-top: .8rem;
-  display: block; }
+  display: block;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
 .composition {
   position: relative; }
