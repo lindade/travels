@@ -8,9 +8,9 @@
 
   &__side {
     height: 52rem;
-    border-radius: 3px;
+    border-radius: $border-radius-default;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .25);
+    box-shadow: $box-shadow-default;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -55,8 +55,8 @@
     background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: $border-radius-default;
+    border-top-right-radius: $border-radius-default;
 
     &--1 {
       background-image: linear-gradient(to right bottom, $color-secondary, $color-secondary-dark), url(../img/travels-5.jpg);

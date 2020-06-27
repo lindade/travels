@@ -7,16 +7,19 @@ $color-secondary-dark: #ff7730;
 $color-tertiary: #2998ff;
 $color-tertiary-dark: #5643fa;
 
-
-
 $color-grey-light: #f7f7f7;
 $color-grey: #eee;
 $color-grey-dark: #777;
+$color-grey-dark-2: #999;
 $color-white: #fff;
 $color-black: #000;
 
 // font
 $default-font-size: 1.6rem;
+
+// border-radius
+$border-radius-default: .3rem;
+$box-shadow-default: 0 1.5rem 4rem rgba($color-black, .25);
 
 // grid
 $grid-width: 114rem;
