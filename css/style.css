@@ -211,7 +211,7 @@ body {
   height: 52rem; }
   .card__side {
     height: 52rem;
-    border-radius: 3px;
+    border-radius: 0.3rem;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
     transition: all .8s ease;
@@ -240,8 +240,8 @@ body {
     background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem; }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/travels-5.jpg); }
     .card__picture--2 {
@@ -303,7 +303,7 @@ body {
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 0.3rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s; }
   .feature-box__icon {
@@ -316,6 +316,43 @@ body {
   .feature-box:hover {
     transform: scale(1.1) translateY(-1.5rem);
     box-shadow: 0 3rem 8rem rgba(0, 0, 0, 0.15); }
+
+.form__group:not(:last-child) {
+  padding-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 0.3rem;
+  border: none;
+  border-bottom: 3px solid transparent;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 90%;
+  display: block;
+  transition: all .3s; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+    border-bottom: 3px solid #55c57a; }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ff7730; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .8rem;
+  display: block;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
 .composition {
   position: relative; }
@@ -351,7 +388,7 @@ body {
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background: rgba(255, 255, 255, 0.8);
-  border-radius: 3px;
+  border-radius: 0.3rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
   .story__shape {
@@ -458,3 +495,18 @@ body {
 .story-section {
   position: relative;
   padding: 15rem 0; }
+
+.booking-section {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)); }
+
+.book {
+  background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/travels-10.jpg);
+  background-size: 100%;
+  background-repeat: none;
+  border-radius: 0.3rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+  height: 50rem; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
