@@ -12,6 +12,8 @@
     top: 6rem;
     right: 6rem;
     z-index: 200;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    ;
 
   }
 
@@ -25,16 +27,19 @@
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
     z-index: 100;
 
-    transform: scale(70);
+    transition: transform .8s cubic-bezier(0.06, 0, 0.07, 1);
   }
 
   &__nav {
     height: 100%;
-    width: 100%;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 150;
+    // initially hide navigation elements
+    opacity: 0;
+    width: 0;
+    transition: all .8s cubic-bezier(0.68, -0.36, 0.265, 1.45);
   }
 
   &__list {
@@ -74,5 +79,14 @@
       color: $color-primary;
       transform: translateX(1rem);
     }
+  }
+
+  &__checkbox:checked~&__background {
+    transform: scale(80);
+  }
+
+  &__checkbox:checked~&__nav {
+    opacity: 1;
+    width: 100%;
   }
 }
