@@ -27,4 +27,42 @@
 
     //transform: scale(70);
   }
+
+  &__nav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 150;
+  }
+
+  &__list {
+    @include center-hor-ver;
+    list-style: none;
+    text-align: center;
+  }
+
+  &__item {
+    margin: 2rem;
+  }
+
+  &__link {
+
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 300;
+      padding: 1rem 2rem;
+      color: $color-white;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      span {
+        margin-right: 1.5rem;
+        display: inline-block;
+      }
+    }
+  }
 }
