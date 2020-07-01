@@ -83,7 +83,7 @@
       height: 1.3rem;
       border-radius: 50%;
       background-color: $color-primary;
-      @include center-hor-ver;
+      @include absoluteCenter;
       opacity: 0;
       transition: opacity .2s;
     }
