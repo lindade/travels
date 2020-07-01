@@ -13,8 +13,8 @@
     right: 6rem;
     z-index: 200;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    ;
-
+    text-align: center;
+    cursor: pointer;
   }
 
   &__background {
@@ -81,6 +81,7 @@
     }
   }
 
+  // FUNCTIONALITY
   &__checkbox:checked~&__background {
     transform: scale(80);
   }
@@ -88,5 +89,66 @@
   &__checkbox:checked~&__nav {
     opacity: 1;
     width: 100%;
+  }
+
+  // ICON
+  &__icon {
+    position: relative;
+    margin-top: 3.5rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 3.5rem;
+      height: 3px;
+      background-color: $color-grey-dark-3;
+      display: inline-block;
+      border-radius: 3rem;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s;
+    }
+
+    &::before {
+      top: -.8rem;
+      transform-origin: left;
+    }
+
+    &::after {
+      top: .8rem;
+      transform-origin: right;
+    }
+  }
+
+  &__btn:hover &__icon::before {
+    top: -1rem;
+  }
+
+  &__btn:hover &__icon::after {
+    top: 1rem;
+  }
+
+  // when the checkbox is selected then,
+  // select its sibling the __btn
+  // and from there select the buttons child (__icon)
+  &__checkbox:checked+&__btn &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked+&__btn &__icon:before {
+    transform: rotate(315deg);
+    top: 1rem;
+    left: .5rem;
+  }
+
+  &__checkbox:checked+&__btn &__icon:after {
+    transform: rotate(-315deg);
+    top: 1rem;
+    left: -.5rem;
   }
 }
