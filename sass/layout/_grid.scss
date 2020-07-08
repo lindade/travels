@@ -4,6 +4,7 @@
 
   @include responsive(tablet-port) {
     max-width: 50rem;
+    padding: 0 3rem;
   }
 
   // :not pseudo class selects every row except the last row:child 
