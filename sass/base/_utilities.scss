@@ -4,6 +4,10 @@
 
 .u-margin-bottom-large {
   margin-bottom: 7rem !important;
+
+  @include responsive(tablet-port) {
+    margin-bottom: 5rem !important;
+  }
 }
 
 .u-margin-bottom-medium {

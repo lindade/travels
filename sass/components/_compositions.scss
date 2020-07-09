@@ -10,17 +10,45 @@
     transition: all .3s;
     outline-offset: 2rem;
 
+    @include responsive(tablet-port) {
+      float: left;
+      position: relative;
+      width: 33.333%;
+      box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+      outline-offset: 1rem;
+    }
+
     &--p1 {
       left: 0;
       top: -2rem;
+
+      @include responsive(tablet-port) {
+        left: -1rem;
+        top: 2rem;
+        transform: scale(1.1);
+      }
     }
+
     &--p2 {
       right: 0;
       top: 2rem;
+
+      @include responsive(tablet-port) {
+        top: -1rem;
+        transform: scale(1.3);
+        z-index: 3;
+      }
     }
+
     &--p3 {
       left: 20%;
       top: 10rem;
+
+      @include responsive(tablet-port) {
+        left: 2rem;
+        top: 1rem;
+        transform: scale(1.2);
+      }
     }
 
     &:hover {
@@ -28,11 +56,25 @@
       transform: scale(1.1) translateY(-.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, .6);
       z-index: 20;
+
+      @include responsive(tablet-port) {
+        left: 0;
+        top: 0;
+        transform: scale(1.2);
+        outline: .8rem solid $color-primary;
+        transform: scale(1.5) translateY(-.5rem);
+        box-shadow: 0 2.5rem 4rem rgba($color-black, .6);
+      }
     }
   }
 
   &:hover &__photo:not(:hover) {
-      transform: scale(.8)
+    transform: scale(.8);
+
+    @include responsive(tablet-port) {
+      left: 0;
+      top: 0;
+    }
   }
 
 }

@@ -97,4 +97,37 @@
       background: $color-primary;
     }
   }
+
+  @include responsive(tablet-port) {
+
+    &__content {
+      text-align: center;
+    }
+
+    &__left {
+      display: table-row;
+    }
+
+    &__close {
+
+      &:link,
+      &:visited {
+        color: $color-white;
+        top: 1.5rem;
+        right: 3.5rem;
+        font-size: 7rem;
+        z-index: 1001;
+      }
+    }
+
+    &__img {
+      float: left;
+      width: 50%;
+    }
+
+    &__text {
+      font-size: 1.6rem;
+      text-align: justify;
+    }
+  }
 }
