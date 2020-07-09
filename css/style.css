@@ -530,20 +530,16 @@ body {
     .pop-up__content {
       text-align: center; }
     .pop-up__left {
-      width: 100%;
       display: table-row; }
     .pop-up__close:link, .pop-up__close:visited {
       color: #fff;
-      position: absolute;
       top: 1.5rem;
       right: 3.5rem;
-      display: inline-block;
       font-size: 7rem;
       z-index: 1001; }
     .pop-up__img {
       float: left;
-      width: 50%;
-      height: 90%; }
+      width: 50%; }
     .pop-up__text {
       font-size: 1.6rem;
       text-align: justify; } }
