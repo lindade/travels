@@ -63,10 +63,35 @@
   background-repeat: none;
   border-radius: $border-radius-default;
   box-shadow: $box-shadow-default;
-  height: 50rem;
+
+  @include responsive(tablet-land) {
+    background-image: linear-gradient(100deg,
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 65%,
+        transparent 65%),
+      url(../img/travels-10.jpg);
+    background-size: cover;
+  }
+
+  @include responsive(tablet-port) {
+    background-image: linear-gradient(to right,
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 100%),
+      url(../img/travels-10.jpg);
+    background-size: cover;
+  }
 
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include responsive(tablet-land) {
+      width: 65%;
+      padding: 4rem;
+    }
+
+    @include responsive(tablet-port) {
+      width: 100%;
+    }
   }
 }
