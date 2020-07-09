@@ -389,6 +389,9 @@ body {
   width: 90%;
   display: block;
   transition: all .3s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
@@ -414,6 +417,10 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form__radio-label {
   font-size: 1.6rem;
@@ -519,6 +526,27 @@ body {
     .pop-up__text ::-webkit-selection {
       color: #fff;
       background: #55c57a; }
+  @media (max-width: 56.25em) {
+    .pop-up__content {
+      text-align: center; }
+    .pop-up__left {
+      width: 100%;
+      display: table-row; }
+    .pop-up__close:link, .pop-up__close:visited {
+      color: #fff;
+      position: absolute;
+      top: 1.5rem;
+      right: 3.5rem;
+      display: inline-block;
+      font-size: 7rem;
+      z-index: 1001; }
+    .pop-up__img {
+      float: left;
+      width: 50%;
+      height: 90%; }
+    .pop-up__text {
+      font-size: 1.6rem;
+      text-align: justify; } }
 
 .composition {
   position: relative; }
@@ -740,10 +768,10 @@ body {
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-  @media (max-width: 37.5em) {
+  @media (max-width: 75em) {
     .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 90%);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 90%); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -914,7 +942,7 @@ body {
   margin-top: -10vh; }
   @media (max-width: 56.25em) {
     .tours-section {
-      padding: 15rem 0 8rem 0; } }
+      padding: 17rem 0 8rem 0; } }
 
 .story-section {
   position: relative;
