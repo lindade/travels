@@ -17,12 +17,14 @@
     cursor: pointer;
 
     @include responsive(tablet-port) {
-      top: 4rem;
+      top: inherit;
+      bottom: 4rem;
       right: 4rem;
     }
 
     @include responsive(phone) {
-      top: 3rem;
+      top: inherit;
+      bottom: 3rem;
       right: 3rem;
     }
   }
@@ -40,12 +42,14 @@
     transition: transform .8s cubic-bezier(0.06, 0, 0.07, 1);
 
     @include responsive(tablet-port) {
-      top: 4.5rem;
+      top: inherit;
+      bottom: 4.5rem;
       right: 4.5rem;
     }
 
     @include responsive(phone) {
-      top: 3.5rem;
+      top: inherit;
+      bottom: 3.5rem;
       right: 3.5rem;
     }
   }
@@ -66,6 +70,11 @@
     @include absoluteCenter;
     list-style: none;
     text-align: center;
+
+    @include responsive(phone) {
+      left: 30%;
+      transform: translate(-20%, -50%);
+    }
   }
 
   &__item {
@@ -90,6 +99,10 @@
       span {
         margin-right: 1.5rem;
         display: inline-block;
+      }
+
+      @include responsive(phone) {
+        padding: 1rem 0;
       }
     }
 

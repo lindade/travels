@@ -798,11 +798,13 @@ body {
   cursor: pointer; }
   @media (max-width: 56.25em) {
     .navigation__btn {
-      top: 4rem;
+      top: inherit;
+      bottom: 4rem;
       right: 4rem; } }
   @media (max-width: 37.5em) {
     .navigation__btn {
-      top: 3rem;
+      top: inherit;
+      bottom: 3rem;
       right: 3rem; } }
 
 .navigation__background {
@@ -817,11 +819,13 @@ body {
   transition: transform 0.8s cubic-bezier(0.06, 0, 0.07, 1); }
   @media (max-width: 56.25em) {
     .navigation__background {
-      top: 4.5rem;
+      top: inherit;
+      bottom: 4.5rem;
       right: 4.5rem; } }
   @media (max-width: 37.5em) {
     .navigation__background {
-      top: 3.5rem;
+      top: inherit;
+      bottom: 3.5rem;
       right: 3.5rem; } }
 
 .navigation__nav {
@@ -841,6 +845,10 @@ body {
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center; }
+  @media (max-width: 37.5em) {
+    .navigation__list {
+      left: 30%;
+      transform: translate(-20%, -50%); } }
 
 .navigation__item {
   margin: 2rem; }
@@ -859,6 +867,9 @@ body {
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block; }
+  @media (max-width: 37.5em) {
+    .navigation__link:link, .navigation__link:visited {
+      padding: 1rem 0; } }
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
