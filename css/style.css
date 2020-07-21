@@ -845,10 +845,6 @@ body {
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center; }
-  @media (max-width: 37.5em) {
-    .navigation__list {
-      left: 30%;
-      transform: translate(-20%, -50%); } }
 
 .navigation__item {
   margin: 2rem; }

@@ -70,11 +70,6 @@
     @include absoluteCenter;
     list-style: none;
     text-align: center;
-
-    @include responsive(phone) {
-      left: 30%;
-      transform: translate(-20%, -50%);
-    }
   }
 
   &__item {
