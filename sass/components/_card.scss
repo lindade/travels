@@ -59,15 +59,30 @@
     border-top-right-radius: $border-radius-default;
 
     &--1 {
-      background-image: linear-gradient(to right bottom, $color-secondary, $color-secondary-dark), url(../img/travels-5.jpg);
+      background-image: linear-gradient(to right bottom, $color-secondary, $color-secondary-dark), url(../img/travels-5-small.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 125em) {
+        background-image: linear-gradient(to right bottom, $color-secondary, $color-secondary-dark), url(../img/travels-5.jpg);
+      }
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/travels-6.jpg);
+      background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/travels-6-small.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 125em) {
+        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/travels-6.jpg);
+      }
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, $color-tertiary, $color-tertiary-dark), url(../img/travels-7.jpg);
+      background-image: linear-gradient(to right bottom, $color-tertiary, $color-tertiary-dark), url(../img/travels-7-small.jpg);
+
+      @media (min-resolution: 192dpi) and (min-width: 37.5em),
+      (min-width: 125em) {
+        background-image: linear-gradient(to right bottom, $color-tertiary, $color-tertiary-dark), url(../img/travels-7.jpg);
+      }
     }
   }
 
