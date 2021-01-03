@@ -167,7 +167,9 @@
     font-weight: 100;
   }
 
-  @include responsive(tablet-port) {
+  //@include responsive(tablet-port) {
+  @media only screen and (max-width: 56.25em),
+  only screen and (hover: none) {
 
     // FUNCTIONALITY
     height: auto;
